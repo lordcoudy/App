@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -7,40 +8,67 @@
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="70dp"
         android:background="@android:color/holo_blue_bright"
         android:textColor="@color/colorAccent"
         android:textColorLink="?android:attr/colorAccent" />
 
+    <Space
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="70dp"
         android:background="@android:color/holo_blue_bright"
         android:textColor="@color/colorAccent"
         android:textColorLink="@android:color/holo_red_light" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
     <TextView
         android:id="@+id/out"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="70dp"
         android:background="@android:color/holo_purple"
         android:text="TextView"
         android:textColorLink="@android:color/holo_red_dark" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
     <Button
         android:id="@+id/c"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="120dp"
         android:background="@color/colorPrimary"
         android:onClick="plus"
         android:text="@string/plus" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
     <Button
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="120dp"
         android:background="@android:color/holo_orange_dark"
         android:onClick="minus"
         android:text="@string/minus" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Calculator made by lordcoudy"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
 </LinearLayout>
