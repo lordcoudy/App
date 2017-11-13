@@ -16,7 +16,8 @@
     <Space
         style="@style/AppTheme"
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background="@android:color/background_dark" />
 
     <EditText
         android:id="@+id/num2"
@@ -28,7 +29,8 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background="@android:color/background_dark" />
 
     <TextView
         android:id="@+id/out"
@@ -40,7 +42,8 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background="@android:color/background_dark" />
 
     <Button
         android:id="@+id/c"
@@ -52,7 +55,8 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background="@android:color/background_dark" />
 
     <Button
         android:layout_width="match_parent"
@@ -67,7 +71,7 @@
         android:background="@color/colorPrimaryDark"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Calculator made by lordcoudy"
+        android:text="Yandex.Money 4100 1280 3954 551"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
