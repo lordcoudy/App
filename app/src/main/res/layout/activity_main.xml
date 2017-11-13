@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="?android:attr/colorAccent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColorLink="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/holo_purple"
+        android:text="TextView"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimary"
+        android:onClick="plus"
+        android:text="@string/plus" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="minus"
+        android:text="@string/minus" />
+
+</LinearLayout>
