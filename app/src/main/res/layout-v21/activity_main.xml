@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,8 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@android:color/holo_blue_bright"
+        android:gravity="center_vertical|center_horizontal"
         android:textColor="@color/colorAccent"
-        android:textColorLink="?android:attr/colorAccent" />
+        android:textColorLink="?android:attr/colorAccent"
+        android:textSize="24sp" />
 
     <Space
         style="@style/AppTheme"
@@ -24,12 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@android:color/holo_blue_bright"
+        android:gravity="center_vertical|center_horizontal"
         android:textColor="@color/colorAccent"
-        android:textColorLink="@android:color/holo_red_light" />
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="24sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp"
+
         android:background="@android:color/background_dark" />
 
     <TextView
@@ -37,12 +41,15 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@android:color/holo_purple"
+        android:gravity="center_vertical|center_horizontal"
         android:text="TextView"
-        android:textColorLink="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp"
+        android:backgroundTint="@android:color/black"
         android:background="@android:color/background_dark" />
 
     <Button
@@ -50,20 +57,25 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@color/colorPrimary"
+        android:elevation="0dp"
         android:onClick="plus"
-        android:text="@string/plus" />
+        android:text="@string/plus"
+        android:textSize="36sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp"
+        android:backgroundTint="@android:color/black"
         android:background="@android:color/background_dark" />
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@android:color/holo_orange_dark"
         android:onClick="minus"
-        android:text="@string/minus" />
+        android:text="@string/minus"
+        android:textSize="36sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -71,7 +83,7 @@
         android:background="@color/colorPrimaryDark"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Yandex.Money 4100 1280 3954 551"
+        android:text="https://money.yandex.ru/to/410012803954551"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
