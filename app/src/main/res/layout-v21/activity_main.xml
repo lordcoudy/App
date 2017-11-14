@@ -3,88 +3,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <EditText
-        android:id="@+id/num1"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@android:color/holo_blue_bright"
-        android:gravity="center_vertical|center_horizontal"
-        android:textColor="@color/colorAccent"
-        android:textColorLink="?android:attr/colorAccent"
-        android:textSize="24sp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <Space
-        style="@style/AppTheme"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@android:color/background_dark" />
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:background="@android:color/holo_purple"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/num2"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@android:color/holo_blue_bright"
-        android:gravity="center_vertical|center_horizontal"
-        android:textColor="@color/colorAccent"
-        android:textColorLink="@android:color/holo_red_light"
-        android:textSize="24sp" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
+        <Button
+            android:id="@+id/c"
+            android:layout_width="90sp"
+            android:layout_height="120sp"
+            android:background="@color/colorPrimary"
+            android:elevation="0dp"
+            android:onClick="plus"
+            android:text="@string/plus"
+            android:textSize="36sp" />
 
-        android:background="@android:color/background_dark" />
-
-    <TextView
-        android:id="@+id/out"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@android:color/holo_purple"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="TextView"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="24sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:backgroundTint="@android:color/black"
-        android:background="@android:color/background_dark" />
-
-    <Button
-        android:id="@+id/c"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/colorPrimary"
-        android:elevation="0dp"
-        android:onClick="plus"
-        android:text="@string/plus"
-        android:textSize="36sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:backgroundTint="@android:color/black"
-        android:background="@android:color/background_dark" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@android:color/black" />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@android:color/holo_orange_dark"
-        android:onClick="minus"
-        android:text="@string/minus"
-        android:textSize="36sp" />
+        <Button
+            android:layout_width="90sp"
+            android:layout_height="120sp"
+            android:layout_gravity="right"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="minus"
+            android:text="@string/minus"
+            android:textSize="36sp" />
 
-    <EditText
+        <Button
+            android:layout_width="90sp"
+            android:layout_height="120dp"
+            android:layout_gravity="right"
+            android:background="@android:color/holo_green_dark"
+            android:elevation="0dp"
+            android:onClick="multiply"
+            android:text="@string/multiply"
+            android:textSize="36sp" />
+
+        <Button
+            android:layout_width="90sp"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="divide"
+            android:text="@string/divide"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="https://money.yandex.ru/to/410012803954551"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="?android:attr/colorAccent"
+            android:textSize="24sp" />
+
+        <Space
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_red_light"
+            android:textSize="24sp" />
+    </LinearLayout>
+
 
 </LinearLayout>
+
