@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -20,13 +21,14 @@
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/c"
-            android:layout_width="90sp"
+            android:layout_width="wrap_content"
             android:layout_height="120sp"
             android:background="@color/colorPrimary"
             android:elevation="0dp"
@@ -34,15 +36,9 @@
             android:text="@string/plus"
             android:textSize="36sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="@android:color/background_dark"
-            android:backgroundTint="@android:color/black" />
-
 
         <Button
-            android:layout_width="90sp"
+            android:layout_width="wrap_content"
             android:layout_height="120sp"
             android:layout_gravity="right"
             android:background="@android:color/holo_red_dark"
@@ -51,8 +47,8 @@
             android:textSize="36sp" />
 
         <Button
-            android:layout_width="90sp"
-            android:layout_height="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="120sp"
             android:layout_gravity="right"
             android:background="@android:color/holo_green_dark"
             android:elevation="0dp"
@@ -61,9 +57,10 @@
             android:textSize="36sp" />
 
         <Button
-            android:layout_width="90sp"
-            android:layout_height="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="120sp"
             android:background="@android:color/holo_orange_dark"
+            android:gravity="center_vertical|center"
             android:onClick="divide"
             android:text="@string/divide"
             android:textSize="36sp" />
@@ -71,37 +68,48 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
+        android:layout_height="156dp"
+        android:gravity="center"
         android:orientation="vertical">
+        <Space
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:background="@android:color/background_dark" />
+
+
 
         <EditText
             android:id="@+id/num1"
             android:layout_width="match_parent"
-            android:layout_height="130sp"
-            android:background="@android:color/transparent"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="@color/colorAccent"
+            android:layout_height="200sp"
+            android:background="?android:attr/colorAccent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
             android:textColorLink="?android:attr/colorAccent"
             android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Space
             style="@style/AppTheme"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
+            android:layout_height="10sp"
             android:background="@android:color/background_dark" />
 
         <EditText
             android:id="@+id/num2"
             android:layout_width="match_parent"
-            android:layout_height="130sp"
-            android:background="@android:color/transparent"
+            android:layout_height="200sp"
+            android:background="?android:attr/colorAccent"
             android:gravity="center_vertical|center_horizontal"
-            android:textColor="@color/colorAccent"
-            android:textColorLink="@android:color/holo_red_light"
+            android:textColor="@android:color/black"
             android:textSize="24sp" />
     </LinearLayout>
 
-
 </LinearLayout>
-
