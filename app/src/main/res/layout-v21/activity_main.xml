@@ -82,12 +82,8 @@
         <EditText
             android:id="@+id/num1"
             android:layout_width="match_parent"
-            android:layout_height="200sp"
-            android:background="?android:attr/colorAccent"
-            android:gravity="center"
-            android:textColor="@android:color/black"
-            android:textColorLink="?android:attr/colorAccent"
-            android:textSize="24sp" />
+            android:layout_height="72dp"
+            android:inputType="" />
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -105,11 +101,8 @@
         <EditText
             android:id="@+id/num2"
             android:layout_width="match_parent"
-            android:layout_height="200sp"
-            android:background="?android:attr/colorAccent"
-            android:gravity="center_vertical|center_horizontal"
-            android:textColor="@android:color/black"
-            android:textSize="24sp" />
+            android:layout_height="72dp"
+            android:inputType="" />
     </LinearLayout>
 
 </LinearLayout>
