@@ -81,7 +81,7 @@
             android:background="@android:color/background_dark" />
 
         <EditText
-            android:id="@+id/num1"
+            android:labelFor="@+id/num1"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:inputType="" />
@@ -100,7 +100,7 @@
             android:background="@android:color/holo_blue_dark" />
 
         <EditText
-            android:id="@+id/num2"
+            android:labelFor="@+id/num2"
             android:layout_width="match_parent"
             android:layout_height="72dp"
 
