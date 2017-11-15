@@ -5,4 +5,5 @@
     <string name="divide">/</string>
     <string name="multiply">*</string>
     <string name="Answer">Answer</string>
+    <string name="Clear">Clear</string>
 </resources>

@@ -70,4 +70,18 @@ public class MainActivity extends AppCompatActivity {
                 (TextView) this.findViewById(R.id.out);
         out.setText("" + (Double.parseDouble(snum1) / Double.parseDouble(snum2)));
     }
+    public void clear(View view){
+        EditText num1 =
+                (EditText) this.findViewById(R.id.num1);
+        num1.setText(" ");
+
+
+        EditText num2 =
+                (EditText) this.findViewById(R.id.num2);
+        num2.setText(" ");
+        TextView out =
+                (TextView) this.findViewById(R.id.out);
+        out.setText(" ");
+
+    }
 }

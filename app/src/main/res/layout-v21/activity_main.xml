@@ -105,6 +105,15 @@
             android:layout_height="72dp"
 
             android:inputType="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:onClick="clear"
+            android:text="@string/Clear"
+            android:theme="@style/Widget.AppCompat.Button.Borderless" />
     </LinearLayout>
 
 </LinearLayout>
