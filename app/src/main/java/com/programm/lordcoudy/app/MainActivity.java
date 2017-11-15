@@ -73,15 +73,15 @@ public class MainActivity extends AppCompatActivity {
     public void clear(View view){
         EditText num1 =
                 (EditText) this.findViewById(R.id.num1);
-        num1.setText(" ");
+        num1.setText("");
 
 
         EditText num2 =
                 (EditText) this.findViewById(R.id.num2);
-        num2.setText(" ");
+        num2.setText("");
         TextView out =
                 (TextView) this.findViewById(R.id.out);
-        out.setText(" ");
+        out.setText("");
 
     }
 }
