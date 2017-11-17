@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+
+
+
+
+
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType=""
+            android:labelFor="@+id/num1"
+            android:text="@string/Enter" />
+
+
+
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType=""
+            android:labelFor="@+id/num2"
+
+            android:text="@string/Enter" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Answer"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="plus"
+        android:text="@string/plus"
+        android:textSize="36sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:onClick="minus"
+        android:text="@string/minus"
+        android:textSize="36sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:onClick="multiply"
+        android:text="@string/multiply"
+        android:textSize="36sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:onClick="divide"
+        android:text="@string/divide"
+        android:textSize="36sp" />
+
+
+</LinearLayout>
