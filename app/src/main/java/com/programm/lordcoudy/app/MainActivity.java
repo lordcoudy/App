@@ -1,5 +1,6 @@
 package com.programm.lordcoudy.app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,77 +13,67 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int Cube = (int)(Math.random()*5);
-        switch (Cube) {
-            case 1: setContentView(R.layout.activity_main);
-            break;
-            case 2: setContentView(R.layout.activity_main2);
-            break;
-            case 3: setContentView(R.layout.activity_main3);
-            break;
-            case 4: setContentView(R.layout.activity_main4);
-            break;
-            case 5: setContentView(R.layout.activity_main5);
-            break;
-        }
+        setContentView(R.layout.activity_main);
+
     }
+
 
 
     public void plus(View view) {
         EditText num1 =
                 (EditText) this.findViewById(R.id.num1);
-        String sNum1 = num1.getText().toString();
+        double sNum1 = Double.parseDouble(num1.getText().toString());
 
 
         EditText num2 =
-                (EditText) this.findViewById(R.id.num2);
-        String sNum2 = num2.getText().toString();
+                (EditText)this.findViewById(R.id.num2);
+        double sNum2 = Double.parseDouble(num2.getText().toString());
 
         TextView out =
                 (TextView) this.findViewById(R.id.out);
-        out.setText("" + (Double.parseDouble(sNum1) + Double.parseDouble(sNum2)));
+        out.setText("" + (sNum1 + sNum2));
     }
     public void minus(View view) {
         EditText num1 =
                 (EditText) this.findViewById(R.id.num1);
-        String sNum1 = num1.getText().toString();
+        double sNum1 = Double.parseDouble(num1.getText().toString());
 
 
         EditText num2 =
-                (EditText) this.findViewById(R.id.num2);
-        String sNum2 = num2.getText().toString();
+                (EditText)this.findViewById(R.id.num2);
+        double sNum2 = Double.parseDouble(num2.getText().toString());
 
         TextView out =
                 (TextView) this.findViewById(R.id.out);
-        out.setText("" + (Double.parseDouble(sNum1) - Double.parseDouble(sNum2)));
+        out.setText("" + (sNum1 - sNum2));
     }
     public void multiply(View view) {
         EditText num1 =
                 (EditText) this.findViewById(R.id.num1);
-        String sNum1 = num1.getText().toString();
+        double sNum1 = Double.parseDouble(num1.getText().toString());
 
 
         EditText num2 =
-                (EditText) this.findViewById(R.id.num2);
-        String sNum2 = num2.getText().toString();
+                (EditText)this.findViewById(R.id.num2);
+        double sNum2 = Double.parseDouble(num2.getText().toString());
 
         TextView out =
                 (TextView) this.findViewById(R.id.out);
-        out.setText("" + (Double.parseDouble(sNum1) * Double.parseDouble(sNum2)));
+        out.setText("" + (sNum1 * sNum2));
     }
     public void divide(View view) {
         EditText num1 =
                 (EditText) this.findViewById(R.id.num1);
-        String sNum1 = num1.getText().toString();
+        double sNum1 = Double.parseDouble(num1.getText().toString());
 
 
         EditText num2 =
-                (EditText) this.findViewById(R.id.num2);
-        String sNum2 = num2.getText().toString();
+                (EditText)this.findViewById(R.id.num2);
+        double sNum2 = Double.parseDouble(num2.getText().toString());
 
         TextView out =
                 (TextView) this.findViewById(R.id.out);
-        out.setText("" + (Double.parseDouble(sNum1) / Double.parseDouble(sNum2)));
+        out.setText("" + (sNum1 / sNum2));
     }
     public void clear(View view){
         EditText num1 =
@@ -97,5 +88,9 @@ public class MainActivity extends AppCompatActivity {
                 (TextView) this.findViewById(R.id.out);
         out.setText("");
 
+    }
+    public void Second(View view){
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
