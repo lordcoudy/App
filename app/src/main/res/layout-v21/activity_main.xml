@@ -67,30 +67,19 @@
         android:layout_height="156dp"
         android:gravity="center"
         android:orientation="vertical">
-        <Space
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="12sp"
-            android:background="@android:color/background_dark" />
 
         <EditText
             android:id="@+id/num1"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="wrap_content"
             android:inputType="" />
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
-
-        <Space
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="12sp"
-            android:background="@android:color/holo_blue_dark" />
 
         <EditText
             android:id="@+id/num2"
@@ -98,20 +87,32 @@
             android:layout_height="72dp"
             android:inputType="" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:onClick="clear"
-            android:text="@string/Clear"/>
 
     </LinearLayout>
-    <Button
-        android:text="@string/Clear"
-        android:layout_width="wrap_content"
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="clear"
-        />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="clear"
+            android:text="@string/Clear" />
+
+        <Button
+            android:id="@+id/google"
+            android:onClick="google"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="?attr/actionModeSplitBackground"
+            android:text="@string/google" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
