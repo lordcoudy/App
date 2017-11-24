@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="100sp"
             android:gravity="center_vertical|center_horizontal"
-            android:text="@string/Answer"
+            android:hint="@string/Answer"
             android:textColor="@android:color/holo_orange_light"
             android:textSize="24sp" />
     </LinearLayout>
@@ -70,6 +70,7 @@
 
         <EditText
             android:id="@+id/num1"
+            android:hint="@string/EnterN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="" />
@@ -83,6 +84,7 @@
 
         <EditText
             android:id="@+id/num2"
+            android:hint="@string/EnterN"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:inputType="" />
