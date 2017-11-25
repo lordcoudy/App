@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,9 +29,10 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="120sp"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/colorPrimary"
             android:onClick="plus"
             android:text="@string/plus"
+            android:textColor="@android:color/white"
             android:textSize="36sp" />
 
 
@@ -38,28 +40,31 @@
             android:layout_width="wrap_content"
             android:layout_height="120sp"
             android:layout_gravity="end"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/colorPrimary"
             android:onClick="minus"
             android:text="@string/minus"
+            android:textColor="@android:color/white"
             android:textSize="36sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="120sp"
             android:layout_gravity="end"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/colorPrimary"
             android:onClick="multiply"
             android:text="@string/multiply"
+            android:textColor="@android:color/white"
             android:textSize="36sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="120sp"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/colorPrimary"
             android:gravity="center_vertical|center"
             android:onClick="divide"
             android:text="@string/divide"
-            android:textSize="36sp"/>
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
     </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -70,9 +75,9 @@
 
         <EditText
             android:id="@+id/num1"
-            android:hint="@string/EnterN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/EnterN"
             android:inputType="" />
     </LinearLayout>
 
@@ -84,9 +89,9 @@
 
         <EditText
             android:id="@+id/num2"
-            android:hint="@string/EnterN"
             android:layout_width="match_parent"
             android:layout_height="72dp"
+            android:hint="@string/EnterN"
             android:inputType="" />
 
 
@@ -102,17 +107,19 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"
             android:onClick="clear"
-            android:text="@string/Clear" />
+            android:text="@string/Clear"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/google"
-            android:onClick="google"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:backgroundTint="?attr/actionModeSplitBackground"
-            android:text="@string/google" />
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="google"
+            android:text="@string/google"
+            android:textColor="@android:color/white" />
 
 
     </LinearLayout>
